@@ -103,16 +103,20 @@ public class View extends JFrame {
 		displayPanel.repaint();
 	}
 
-	public String getMovieName() {
-		return entryMovie.getText();
-	}
+	// public String getMovieName() {
+	// return entryMovie.getText();
+	// }
 
-	public String getRatings() {
-		return entryRating.getText();
-	}
+	// public String getRatings() {
+	// return entryRating.getText();
+	// }
 
-	public String getDate() {
-		return entryDate.getText();
+	// public String getDate() {
+	// return entryDate.getText();
+	// }
+
+	public Movie getMovieDetails() {
+		return new Movie(entryMovie.getText(), entryDate.getText(), entryDate.getText());
 	}
 
 	public String getQuery() {
