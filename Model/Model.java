@@ -17,7 +17,7 @@ public class Model {
         try {
             Class.forName("org.postgresql.Driver");
             c = DriverManager.getConnection("jdbc:postgresql://localhost:5432/imdb",
-                    "postgres", "password");
+                    "postgres", "admin");
             // c.setAutoCommit(false);
             System.out.println("Connected to database");
         } catch (Exception e) {

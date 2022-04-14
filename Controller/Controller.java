@@ -1,6 +1,7 @@
 package Controller;
 
 import View.View;
+import View.Movie;
 import Model.Model;
 import java.awt.event.*;
 import java.util.*;
@@ -31,7 +32,9 @@ public class Controller {
 	class HandleOnSubmit implements ActionListener {
 		public void actionPerformed(ActionEvent ev) {
 			try {
-				model.insertToDB(view.getMovieName(), view.getRatings(), view.getDate());
+
+				Movie m = view.getMovieDetails();
+				model.insertToDB(m.getName(), m.getRating(), m.getDate());
 			} catch (Exception e) {
 				System.out.println("Controller.HandleOnSubmit.actionPerformed failed");
 			}
