@@ -116,7 +116,7 @@ public class View extends JFrame {
 	// }
 
 	public Movie getMovieDetails() {
-		return new Movie(entryMovie.getText(), entryDate.getText(), entryDate.getText());
+		return new Movie(entryMovie.getText(), entryDate.getText() entryRating.getText());
 	}
 
 	public String getQuery() {
